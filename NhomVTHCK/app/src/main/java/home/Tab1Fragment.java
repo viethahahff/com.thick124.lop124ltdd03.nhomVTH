@@ -28,7 +28,6 @@ public class Tab1Fragment extends Fragment {
         recyclerView = view.findViewById(R.id.rcv_tab1);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
-        // Tạo danh sách sản phẩm quần áo mẫu với kích thước
         clothingItems = new ArrayList<>();
         clothingItems.add(new ClothingItem("Áo len sọc nam nữ siêu hot", "Màu xám-trắng", 299000, R.drawable.aolennam, "Size M-XL"));
         clothingItems.add(new ClothingItem("Áo len sọc nam nữ", "Màu đen-trắng", 399000, R.drawable.aolennam, "Size S-XL"));
@@ -43,7 +42,6 @@ public class Tab1Fragment extends Fragment {
         clothingItems.add(new ClothingItem("Váy thỏ dễ thương", "Màu trắng đỏ", 399000, R.drawable.aolennam, "3-4 tuổi "));
         clothingItems.add(new ClothingItem("Áo phao cho bé trai", "Màu trắng xám", 399000, R.drawable.aolennam, "3-4 tuổi "));
 
-        // Khởi tạo Adapter
         adapter = new ClothingAdapter(clothingItems);
         recyclerView.setAdapter(adapter);
 

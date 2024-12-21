@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Load fragment_home as the initial fragment
+
         if (savedInstanceState == null) {
             loadFragment(new fragment_home());
         }

@@ -17,9 +17,9 @@ public class HomeViewPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-                return new Tab1Fragment(); // Fragment cho tab đầu tiên
+                return new Tab1Fragment();
             default:
-                return new Tab1Fragment(); // Fragment mặc định
+                return new Tab1Fragment();
         }
     }
 
