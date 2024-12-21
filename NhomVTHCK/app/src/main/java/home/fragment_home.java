@@ -1,9 +1,11 @@
 package home;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
@@ -34,7 +36,14 @@ public class fragment_home extends Fragment {
 
         tablayout.setupWithViewPager(viewpager);
 
-
+        ImageView accountIcon = mView.findViewById(R.id.account_icon);
+        accountIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), profile.class);
+                startActivity(intent);
+            }
+        });
 
         return mView;
     }
